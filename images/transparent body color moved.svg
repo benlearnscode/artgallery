@@ -1,0 +1,61 @@
+<svg width="915" height="512" viewBox="0 0 915 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_12_2)">
+<rect x="320" y="62" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="320" y="302" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="400" y="302" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="480" y="382" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="480" y="302" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="480" y="228" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="440" y="182" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="400" y="142" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="354" y="102" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="320" y="62" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 394 62)" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 234 228)" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 274 182)" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 314 142)" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 354 102)" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 394 62)" fill="#02010B" fill-opacity="0.905882"/>
+<path d="M154 382H234V462H154V382Z" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="240" y="302" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect width="88" height="80" transform="matrix(-1 0 0 1 242 302)" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="686" y="382" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="686" y="302" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="686" y="222" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="686" y="142" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="686" y="62" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="606" y="62" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="766" y="62" width="80" height="80" fill="#02010B" fill-opacity="0.905882"/>
+<rect x="305" y="50" width="80" height="80" fill="white"/>
+<rect x="305" y="290" width="80" height="80" fill="white"/>
+<rect x="385" y="290" width="80" height="80" fill="white"/>
+<rect x="465" y="370" width="80" height="80" fill="white"/>
+<rect x="465" y="290" width="80" height="80" fill="white"/>
+<rect x="465" y="216" width="80" height="80" fill="white"/>
+<rect x="425" y="170" width="80" height="80" fill="white"/>
+<rect x="385" y="130" width="80" height="80" fill="white"/>
+<rect x="339" y="90" width="80" height="80" fill="white"/>
+<rect x="305" y="50" width="80" height="80" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 379 50)" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 219 216)" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 259 170)" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 299 130)" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 339 90)" fill="white"/>
+<rect width="80" height="80" transform="matrix(-1 0 0 1 379 50)" fill="white"/>
+<path d="M139 370H219V450H139V370Z" fill="white"/>
+<rect x="225" y="290" width="80" height="80" fill="white"/>
+<rect width="88" height="80" transform="matrix(-1 0 0 1 227 290)" fill="white"/>
+<rect x="671" y="370" width="80" height="80" fill="white"/>
+<rect x="671" y="290" width="80" height="80" fill="white"/>
+<rect x="671" y="210" width="80" height="80" fill="white"/>
+<rect x="671" y="130" width="80" height="80" fill="white"/>
+<rect x="671" y="50" width="80" height="80" fill="white"/>
+<rect x="591" y="50" width="80" height="80" fill="white"/>
+<rect x="751" y="50" width="80" height="80" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_12_2">
+<rect width="915" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
