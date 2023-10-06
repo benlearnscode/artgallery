@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="home-header.css">
     <link rel="stylesheet" href="home-slide.css">
+    <link rel="stylesheet" href="home-gallery.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 
 
 </head>
@@ -27,7 +29,7 @@
             <a href="home.html" >
                 <!-- <img class="home-icon" src="images/icons/home-icon2.svg" > -->
                 Home</a>
-            <a href="#">
+            <a href="explore.html">
                 <!-- <img class="explore-icon" src="images/icons/explore-icon2.svg"> -->
                 Explore</a>
             <a href="about_us.html">About</a>
@@ -43,52 +45,103 @@
 
     <!-- /*slider*/ -->
     <div class="slide-homepage">
+
         <div class="slider">
             <div class="slide">
                 
-                <div class="backslide">
+                <div class="slide-content">
+                    <p><h1>MONA LISA BY LEONARDO DA VINCI (1503-1505)</h1>
+                        Probably the most famous painting in the world is Leonardo da Vinci's La Gioconda, better known as Mona Lisa. This painting is a portrait of Madame Gherardini, personifying the ideal woman of the Renaissance. They tried to damage the painting more than once, and in 1911 it was also kidnapped, returning only 2 years later. Admiration for it truly knows no bounds: Napoleon Bonaparte even removed it from the museum and ordered to hang it in his own bedroom. The painting is officially declared priceless, which is not surprising, as this masterpiece is the best art of all time
+                    </p>
                     <!-- <img src="Slides/okaygoblin.png"> -->
-                    <div class="slide-content">
-                     <h1>hello</h1>
-                    </div>
-
                 </div>
+                <div class="backslide">
+                  <img  src="images/images-slider/mona_liza_800x.jpg" height="600px" >
+                </div>
+
+                
             </div>
 
             <div class="slide">
                 <div class="slide-content">
-                    <p>content2</p>
+                    <p><h1>GIRL WITH A PEARL EARRING BY JOHANNES VERMEER (1665)</h1>
+                        Girl with a Pearl Earring by Dutch artist Jan Vermeer is often referred to as the northern Mona Lisa. This is not only because of its extraordinary popularity, but also because the expression on the girl's face is difficult to capture and explain. Very little is known about the painting: it is not dated, the name of the girl depicted is unknown. In 2003, based on the novel of the same name by Tracy Chevalier, a film was cut about the hypothetical creation of the painting.  </p>
                 </div>
-                <div class="backslide">
-
+                <div class="backslide" >
+                    <img  src="images/images-slider/1665_Girl_with_a_Pearl_Earring.jpg" height="600px">
+                   
                 </div>
+                
             </div>
 
             <div class="slide">
                 <div class="slide-content">
-                    <p>content</p>
+                    <p><h1>THE ANCIENT OF DAYS BY WILLIAM BLAKE (1794)</h1>This popular artwork by William Blake is now in the British Museum, London. Along with the original name, two more versions are widespread: The Great Architect or The Creation. The literal name of the painting, The Ancient of Days, is the phrase that was used as the name of God. The main character of the painting is God at the moment of creation, who does not establish order, but limits freedom and denotes the limits of imagination.</p>
                 </div>
                 <div class="backslide">
+                    <img  src="images/images-slider/The_Ancient_of_Days_800x.webp" height="600px">
 
                 </div>
             </div>
         </div>
 
     </div>
-    <script src="slide.js"></script>
+    
+        <!-- radio buttons for slider -->
+        <div class="slider-buttons-div">
+        <button id="prevButton" class="slider-buttons"> &lt Previous  </button>
+        <button id="nextButton" class="slider-buttons"> Next &gt</button>
+         </div>
+        <script src="slide.js"></script>
+
+    
 
 
-    <!-- radio buttons for slider
-    <div class="slide-buttons">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio1">
+    <div class="gallery" >
+        <h1> Recent Trending :</h1>
+        <div >
+        <div class="body-gallery">
+        <div class="gallery-slider ">
+            <div class="gallery-items ">
+                <p></p>
+                
 
-    </div> -->
+            </div>
 
+            <div class="gallery-items">
+                <p></p>
+                
 
+            </div>
 
+            <div class="gallery-items">
+                <p> </p>
+                
+
+            </div>
+
+            <div class="gallery-items">
+                <p></p>
+                
+
+            </div>
+
+            <div class="gallery-items">
+                <p></p>
+                
+
+            </div>
+         </div>
+        </div>
+    </div>
+            
+
+    </div>
     <div>
+    <script src="gallery-slide.js"></script>
 
+    <div class="buttonadd">
+    <a href="uploadpage2.html"><button class="upload">+</button></a> 
     </div>
 </body>
 </html>

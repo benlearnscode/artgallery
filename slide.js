@@ -12,5 +12,22 @@ function updateSlider() {
     slider.style.transform = `translateX(${translateX})`;
 }
 
-// Automatically switch slides every 3 seconds (adjust the interval as needed)
-setInterval(nextSlide, 3000);
+
+
+// // Automatically switch slides every 3 seconds (adjust the interval as needed)
+setInterval(nextSlide, 5000);
+
+
+
+document.getElementById("prevButton").addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlider();
+});
+
+document.getElementById("nextButton").addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlider();
+});
+
+
+

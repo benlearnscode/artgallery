@@ -16,4 +16,16 @@ a,button,text,label{
 body{
     background-color: #02010be7;
 }
-
+.buttonadd{
+    display: flex;
+    justify-content: end;
+}
+.upload{
+    
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 40px;
+    font-size: 3em;
+    margin-right: 30px ;
+    margin-bottom: 30px;
+}
