@@ -1,3 +1,15 @@
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updatePassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+  import { getDatabase, set, ref, update, onValue } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+  import { getStorage, ref as storeref, uploadBytes  } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  
+
+  // Initialize Firebase
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCeZl8w_rQm8qUuKocBPoqUrgkeWUUrfIM",
@@ -10,45 +22,41 @@ const firebaseConfig = {
     measurementId: "G-SG5HJS2J4Z"
   };
 
-firebase.initializeApp(firebaseConfig);
+
+  const app = initializeApp(firebaseConfig);
+
 
 
 var fileText =document.querySelector(".fileText");
-var uploadPercentage =document.querySelector(".uploadPercentage");
-var progress = document.querySelector(".progress");
-var percentVal;
 var fileItem;
 var fileName;
-function getFile(e){
-    fileItem = e.target.files[0];
+
+var fileInp = document.getElementById("fileInp")
+var uploadbtn = document.getElementById("uploadbtn")
+
+uploadbtn.addEventListener("click", uploadImage)
+
+fileInp.addEventListener("change", (event)=>{
+    fileItem = event.target.files[0];
+    console.log(fileItem)
     fileName=fileItem.name;
     fileText.innerHTML=fileName;
-
-}
-
-function uploadImage(){
-
-    let storageRef = firebase.storage().ref("images/"+ fileName);
-    let uploadTask = storageRef.put(fileItem);
+    if (fileItem) {
+    imgdata = fileItem
+    }
+})
 
 
-    uploadTask.on("state_changed",(snapshot)=>{
-        console.log()
-        percentVal = Math.floor((snapshot.bytesTransferred/snapshot.totalBytes)*100);
-        console.log(percentVal);
-        uploadPercentage.innerHTML=percentVal+"%";
-        progress.style.width=percentVal+"%";
+var imgdata = null
 
-    },(error)=>{
-        console.log("Error is ",error);
-    },()=>{
+async function uploadImage(){
+    const storage = getStorage();
 
-        uploadTask.snapshot.ref.getDownloadURL().then((url)=>{
-                console.log("URL",url);
-        })
+    console.log(fileName)
+     var imagesRef = storeref(storage,`images/${fileName}`);
+     uploadBytes(imagesRef, imgdata).then((snapshot) => {
+         console.log('Uploaded a blob or file!');
+         console.log(snapshot)
+       });
 
-
-
-
-    })
 }
