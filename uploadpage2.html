@@ -44,18 +44,20 @@
     </div> 
 
 
-    <div class="body-upload">
-
-    <input type="file" id="fileInp" class="inputFile">
-    <label for="fileInp">+</label>
-    <span class="fileText"></span>
-    <img id="image"/>
-    <button id="uploadbtn" >Upload Image</button>
-    <div class="bar">
-        <div class="progress"></div>
-    </div>
-     <div class="uploadPercentage">0%</div>
-    
+    <div style="display: flex; flex-direction: row; gap: 50px;" class="body-upload">
+        <div>
+            <input type="file" id="fileInp" class="inputFile">
+            <div id="inputdiv" style="display: block;">
+                <label class="inputLabel" for="fileInp" >+</label>
+            </div>
+            <div id="imgdiv" style="display: none;">
+                <img src="explore-images/art2.avif" class="artimg" id="artimg">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; padding-left: 100px;">
+            <input type="text" id="filenamein" class="filenamein" placeholder="Art Name">
+            <button id="uploadbtn" >Upload Image</button>
+        </div>
     </div>
 </body>
 <!-- <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script> -->
