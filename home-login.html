@@ -178,7 +178,7 @@
                 })
                 alert('User Created');
                 // location = <location href="home"></location>;
-                // window.location.replace("home.html");
+                window.location ="explore.html"
                 // ...
             })
             .catch((error) => {
@@ -191,30 +191,32 @@
 
         });
 
-        // login.addEventListener('click',(e)=> {
-        //     var email = document.getElementById('email-login').value;
-        //     var password = document.getElementById('password-login').value;
-        //     signInWithEmailAndPassword(auth, email, password)
-        //         .then((userCredential) => {
-        //              // Signed in 
-        //              const user = userCredential.user;
-        //             const dt = new Date();
-        //             update(ref(database, 'users/' + user.uid),{
-        //                 last_login:dt,
+        login.addEventListener('click',(e)=> {
+            var email = document.getElementById('email-login').value;
+            var password = document.getElementById('password-login').value;
+            console.log(email)
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                     // Signed in 
+                     const user = userCredential.user;
+                    const dt = new Date();
+                    update(ref(database, 'users/' + user.uid),{
+                        last_login:dt,
 
 
-        //             })
-        //             alert('User logged in');
-                        //  window.location = "homepage";
-        //         })
+                    })
+                    alert('User logged in');
+                         window.location = "home.html";
+                })
              
-        //         .catch((error) => {
-        //             const errorCode = error.code;
-        //             const errorMessage = error.message;
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
                     
-        //             alert(errorCode + " " + errorMessage);
-        //         });
-        // });
+                    alert(errorCode + " " + errorMessage);
+                });
+        });
         login.addEventListener('click',(e)=>{
   var email = document.getElementById('email-login').value;
   var password = document.getElementById('password-login').value;
